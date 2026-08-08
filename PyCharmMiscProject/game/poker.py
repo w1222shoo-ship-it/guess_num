@@ -1,0 +1,7 @@
+from random import choice
+
+#牌組
+def poker():
+    a = ['C','H','D','S']
+    b = [1,2,3,4,5,6,7,8,9,'T','J','Q','K']
+    return choice(a)+str(choice(b))

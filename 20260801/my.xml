@@ -1,0 +1,10 @@
+<class>
+    <morning>
+        <item time="第一節" where="101">國文</item>
+        <item time="第二節" where="101">英文</item>
+    </morning>
+    <afternoon>
+        <item time="第五節" where="操場">體育</item>
+        <item time="第六節" where="101">數學</item>
+    </afternoon>
+</class>

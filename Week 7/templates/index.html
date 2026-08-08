@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="zh-Hant">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>猜數字遊戲</title>
+    <link rel="stylesheet" href="/static/css/style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <header>
+        <h1>猜數字遊戲</h1>
+        <p class="muted">電腦會從 1 到 100 隨機選一個數字，來猜看看！</p>
+      </header>
+
+      <main id="game" class="card">
+        <div id="status" class="status">按「開始遊戲」以啟動</div>
+
+        <div class="controls">
+          <input id="guessInput" type="number" min="1" max="100" placeholder="輸入 1-100" disabled />
+          <button id="guessBtn" class="btn" disabled>送出猜測</button>
+          <button id="startBtn" class="btn primary">開始遊戲</button>
+        </div>
+
+        <div id="info">
+          <div id="attempts">嘗試次數: 0</div>
+          <ul id="history" class="history"></ul>
+        </div>
+
+        <div id="result" class="result"></div>
+      </main>
+
+      <footer class="foot muted">本頁為教學示範，可擴充限次或多人模式</footer>
+    </div>
+
+    <script src="/static/js/app.js"></script>
+  </body>
+</html>
